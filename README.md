@@ -1,7 +1,7 @@
 # 🔄 Fork Parity MCP
 
-[![npm version](https://badge.fury.io/js/%40moikas%2Fparity-mcp.svg)](https://badge.fury.io/js/%40moikas%2Fparity-mcp)
-[![Node.js CI](https://github.com/moikas/parity-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/moikas-code/parity-mcp/actions/workflows/ci.yml)
+[![npm version](https://badge.fury.io/js/%40moikas%2Ffork-parity-mcp.svg)](https://badge.fury.io/js/%40moikas%2Ffork-parity-mcp)
+[![Node.js CI](https://github.com/moikas-code/fork-parity-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/moikas-code/fork-parity-mcp/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **Track and manage fork parity with upstream repositories using Model Context Protocol (MCP)**
@@ -23,7 +23,7 @@ A powerful MCP server that helps you stay in sync with upstream repositories by 
 ### Installation
 
 ```bash
-npm install -g @moikas/parity-mcp
+npm install -g @moikas/fork-parity-mcp
 ```
 
 ### Basic Setup
@@ -198,7 +198,7 @@ The server creates a `.parity-status.json` file to track:
 
 ```bash
 # Clone the repository
-git clone https://github.com/moikas/parity-mcp.git
+git clone https://github.com/moikas-code/fork-parity-mcp.git
 cd parity-mcp
 
 # Install dependencies
@@ -251,10 +251,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**[🏠 Homepage](https://github.com/moikas/parity-mcp)** • 
+**[🏠 Homepage](https://github.com/moikas-code/fork-parity-mcp)** • 
 **[📖 Documentation](SETUP.md)** • 
-**[🐛 Report Bug](https://github.com/moikas/parity-mcp/issues)** • 
-**[✨ Request Feature](https://github.com/moikas/parity-mcp/issues)**
+**[🐛 Report Bug](https://github.com/moikas-code/fork-parity-mcp/issues)** • 
+**[✨ Request Feature](https://github.com/moikas-code/fork-parity-mcp/issues)**
 
 Made with ❤️ for the open source community
 
