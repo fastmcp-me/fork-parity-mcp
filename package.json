@@ -1,16 +1,19 @@
 {
   "name": "@moikas/fork-parity-mcp",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "MCP server for tracking fork parity with upstream repositories",
   "type": "module",
   "main": "fork-parity-server.js",
   "bin": {
-    "fork-parity-mcp": "./fork-parity-server.js"
+    "fork-parity-mcp": "./fork-parity-server.js",
+    "fork-parity": "./src/cli.js"
   },
   "scripts": {
     "start": "node fork-parity-server.js",
     "mcp": "node fork-parity-server.js",
     "serve": "node fork-parity-server.js",
+    "cli": "node src/cli.js",
+    "demo": "node examples/complete-fork-parity-demo.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm pack --dry-run"
   },
@@ -32,14 +35,24 @@
   "homepage": "https://github.com/moikas-code/fork-parity-mcp#readme",
   "files": [
     "fork-parity-server.js",
+    "src/",
+    "examples/",
     "README.md",
+    "SETUP.md",
+    "FORK_PARITY_ENHANCED.md",
+    "COMPLETE_IMPLEMENTATION.md",
     "LICENSE"
   ],
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^0.5.0"
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "better-sqlite3": "^12.2.0",
+    "commander": "^11.1.0"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.31.0"
   }
 }

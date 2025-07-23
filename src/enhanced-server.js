@@ -9,12 +9,12 @@ import {
   McpError,
 } from '@modelcontextprotocol/sdk/types.js';
 
-import ForkParityDatabase from './src/database.js';
-import SmartTriageSystem from './src/triage.js';
-import AdvancedAnalysisSystem from './src/advanced-analysis.js';
-import IntegrationHelpersSystem from './src/integration-helpers.js';
-import GitHubActionsIntegration from './src/github-actions.js';
-import NotificationSystem from './src/notifications.js';
+import ForkParityDatabase from './database.js';
+import SmartTriageSystem from './triage.js';
+import AdvancedAnalysisSystem from './advanced-analysis.js';
+import IntegrationHelpersSystem from './integration-helpers.js';
+import GitHubActionsIntegration from './github-actions.js';
+import NotificationSystem from './notifications.js';
 import { execSync } from 'child_process';
 
 class EnhancedForkParityServer {
@@ -1138,10 +1138,10 @@ class EnhancedForkParityServer {
 
   getPriorityFilter(priority) {
     const priorities = {
-      'critical': "'critical'",
-      'high': "'critical', 'high'",
-      'medium': "'critical', 'high', 'medium'",
-      'low': "'critical', 'high', 'medium', 'low'"
+      'critical': '\'critical\'',
+      'high': '\'critical\', \'high\'',
+      'medium': '\'critical\', \'high\', \'medium\'',
+      'low': '\'critical\', \'high\', \'medium\', \'low\''
     };
     return priorities[priority] || priorities['medium'];
   }
